@@ -6,12 +6,12 @@ import { BiGridAlt } from 'react-icons/bi';
 
 const ProjectsSection = () => {
   return (
-
     <>
+    
     <section id='Proyectos'>
 
         <TitleSection title={'Proyectos'} icon={<BiGridAlt size={50} /> } />
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-stretch justify-items-stretch gap-y-[2%]">
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-3 md:gap-y-[2%] items-center justify-stretch justify-items-stretch">
             {projects.map((project, index) => (
             <ProyectCard key={index} {...project} />
           ))}
@@ -20,8 +20,6 @@ const ProjectsSection = () => {
     </section>
 
     </>
-
-
   )
 }
 
