@@ -1,6 +1,7 @@
 import React from 'react';
 import TitleSection from './ui/TitleSection';
 import { PiCertificateBold } from 'react-icons/pi';
+import CertificadosCard from './CertificadosCard';
 
 const certificados = [
   {
@@ -28,9 +29,9 @@ const certificados = [
     imagen: 'Certificado_DW4.jpg',
   },
   {
-    titulo: 'Desarrollo Web 5',
-    institucion: 'Talento Tech',
-    fecha: 'Diciembre 2024',
+    titulo: 'Desarrollo Fullstack',
+    institucion: 'Academia Numen',
+    fecha: 'Agosto 2025',
     imagen: 'Certificado_DW4.jpg',
   },
 ];
@@ -42,23 +43,7 @@ const Certificados = () => {
 
       <div className="flex flex-wrap justify-center gap-6">
         {certificados.map((cert, index) => (
-          <article
-            key={index}
-            className="w-[250px] bg-gray-100 rounded-lg shadow-md flex flex-col items-center p-4"
-          >
-            <img src={`/images/${cert.imagen}`}
-              alt={`Certificado ${cert.titulo}`}
-              className="w-[200px] rounded-[10px] mb-3"
-            />
-            <div className="text-center">
-              <h3 className="text-[1.4em] text-[var(--first-color-font)] font-semibold mb-1">
-                {cert.titulo}
-              </h3>
-              <p className="text-[1.1em] text-gray-600">
-                {cert.institucion} - {cert.fecha}
-              </p>
-            </div>
-          </article>
+          <CertificadosCard {...cert} key={index} />
         ))}
       </div>
     </section>

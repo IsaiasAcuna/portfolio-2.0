@@ -1,48 +1,78 @@
 import React from 'react'
-import { BiLogoLinkedinSquare } from 'react-icons/bi';
+import Image from 'next/image';
 import Button from './ui/Button';
+import { BiMailSend } from 'react-icons/bi';
+import { BiLogoLinkedinSquare } from 'react-icons/bi';
 import { FaGithub } from 'react-icons/fa';
+import SplitText from '@/animations/SplitText';
+import ElectricBorder from '@/animations/ElectricBorder'
+import Prism from '@/animations/Prism';
+
+
+
 
 const HomeSection = () => {
+  const handleAnimationComplete = () => {
+    console.log('All letters have animated!');
+  };
+
   return (
+    <>
+
+    
+    
     <section
       id="Inicio"
-      className="w-full h-[70vh] pt-[10%] flex flex-col items-center mb-[10%]"
+      className="w-full h-[100dvh] flex flex-col items-center justify-center"
     >
 
-      <figure className="image flex flex-col items-center">
-        <img
-          src="/face.webp"
-          alt="Foto de Isaías"
-          className="w-[200px] h-[200px] rounded-full object-cover"
-        />
-      </figure>
+    
 
-      <div className="text-center">
-        <h1 className="text-[65px] m-0 text-black">Hello! I'm Acuña Isaías</h1>
-        <h2 className="text-[40px] font-bold text-green-600 mt-[-1%] tracking-[-1.5px]">
+      <ElectricBorder
+        color="#1CA008"
+        speed={1}
+        chaos={0.5}
+        thickness={2}
+        style={{ borderRadius: 100 }}
+      >
+
+        <figure className="flex flex-col items-center rounded-full">
+              <Image
+                src="/face.webp"
+                alt="Foto de Isaías"
+                className="rounded-full object-cover"
+                width={200}
+                height={200}
+                priority
+              />
+        </figure>
+
+        </ElectricBorder>
+      
+
+
+      <div className="text-center mt-[8%]">
+        <SplitText
+          text="Hello! I'm Acuña Isaías"
+          className="text-6xl font-semibold tracking-[-1.5px]"
+          delay={60}
+          duration={0.2}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          textAlign="center"
+          onLetterAnimationComplete={handleAnimationComplete}
+        />
+        <h2 className="text-[40px] text-green-400 mt-[-1%] tracking-[-1.5px]">
           Desarrollador Web FullStack
         </h2>
 
         <div className="mt-[4%] flex justify-center gap-[5%]">
-          <button className="text-[20px] border border-gray-400 rounded-[10px] px-2 py-1 bg-transparent transition duration-200 hover:bg-green-700">
-            <a
-              href="#"
-              className="flex items-center font-semibold text-[var(--first-color-font)] transition duration-200 hover:text-white"
-            >
-              <i className="bx bx-mail-send text-black pr-[5px] transition duration-200 hover:text-white" />
-              Contáctame
-            </a>
-          </button>
-          <button className="text-[20px] border border-gray-400 rounded-[10px] px-2 py-1 bg-transparent transition duration-200 hover:bg-green-700">
-            <a
-              href="#"
-              className="flex items-center font-semibold text-[var(--first-color-font)] transition duration-200 hover:text-white"
-            >
-              <i className="bx bxl-linkedin-square text-black pr-[5px] transition duration-200 hover:text-white"><BiLogoLinkedinSquare /></i>
-              LinkedIn
-            </a>
-          </button>
+          <Button title='Contactame' icon={<BiMailSend />} link={'https://mail.google.com/mail/?view=cm&fs=1&to=acunaisaias504@gmail.com"'}/>
+          <Button title='LinkedIn' icon={<BiLogoLinkedinSquare/>} link={'https://www.linkedin.com/in/isaiasacuna/'} /> 
           <Button title='GitHub' icon={<FaGithub/>} link={'https://github.com/isaiasacuna'} />
         </div>
 
@@ -53,6 +83,7 @@ const HomeSection = () => {
 
       
     </section>
+    </>
   )
 }
 

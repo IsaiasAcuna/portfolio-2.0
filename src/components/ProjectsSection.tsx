@@ -8,7 +8,7 @@ const ProjectsSection = () => {
   return (
 
     <>
-    <section>
+    <section id='Proyectos'>
 
         <TitleSection title={'Proyectos'} icon={<BiGridAlt size={50} /> } />
         <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-stretch justify-items-stretch gap-y-[2%]">

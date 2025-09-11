@@ -24,7 +24,7 @@ const TecnologiesSection = () => {
       <TitleSection title="Tecnologias" icon={<FaCode size={40} />} />
 
       <div className="grid grid-cols-7 justify-items-center ">
-        {technologies.map((tecnology) => <img src={`/svg/${tecnology}`} className='w-20 h-20 mb-[40%]' />)}
+        {technologies.map((tecnology, index) => <img key={index} src={`/svg/${tecnology}`} className='w-20 h-20 mb-[40%]' />)}
       </div>
     </section>
   )
