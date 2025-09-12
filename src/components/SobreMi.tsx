@@ -1,6 +1,7 @@
 import React from 'react';
 import TitleSection from './ui/TitleSection';
 import { RiUserFollowLine } from 'react-icons/ri';
+import Image from 'next/image';
 
 const SobreMi = () => {
   return (
@@ -21,8 +22,10 @@ const SobreMi = () => {
             </p>
           </div>
 
-          <img
-            src="./assets/images/IMG_20250314_005530_677.webp"
+          <Image
+            src="/images/IMG_20250314_005530_677.webp"
+            width={290}
+            height={290}
             alt="Foto de Isaias Acuña, desarrollador web"
             className="w-[290px] rounded-[10px] border-[10px] border-[var(--first-color-global)] rotate-[5deg]"
           />

@@ -1,7 +1,7 @@
 import React from 'react'
 import TitleSection from './ui/TitleSection'
 import { FaCode } from 'react-icons/fa6';
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiHtml5, SiCss3, SiJavascript } from 'react-icons/si';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiHtml5, SiCss3, SiJavascript, SiMongodb, SiAxios } from 'react-icons/si';
 import LogoLoop from '@/animations/LogoLoop';
 
 const techLogos = [
@@ -12,6 +12,8 @@ const techLogos = [
   { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
   { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
   { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+  { node: <SiMongodb />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+  { node: <SiAxios />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
 ];
 
 const TecnologiesSection = () => {
@@ -26,10 +28,10 @@ const TecnologiesSection = () => {
           direction="left"
           logoHeight={70}
           gap={100}
-          pauseOnHover
+          pauseOnHover={false}
           scaleOnHover
           fadeOut
-          fadeOutColor="#000"
+          fadeOutColor="transaparent"
           ariaLabel="Technology partners"
         />
       </div>

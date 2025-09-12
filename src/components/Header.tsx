@@ -1,7 +1,4 @@
 import React from 'react'
-import { BiHome } from 'react-icons/bi';
-import { BiGridAlt } from 'react-icons/bi';
-import { BiSolidFace } from 'react-icons/bi';
 
 const Header = () => {
   return (
