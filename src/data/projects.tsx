@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     title: 'Liverpool Create Team',
-    description: 'Sitio Web para gestionar jugadores del Liverpool FC, complementado con Backend. Creado con Next.JS, React, TailwindCSS, AXIOS y Mongodb',
+    description: 'Sitio Web complementado con Backend para gestionar jugadores del Liverpool FC y crear tu propio club de tus sueños.',
     image: 'presentacion-mediasongs-card-proyectos.jpg',
     link: 'https://liverpool-web-6eys.onrender.com/',
     techs: [<SiNextdotjs key={'next'}/>, <SiTypescript key={'next'}/>, <SiTailwindcss key={'next'}/>,<SiAxios key={'next'} />, <SiMongodb key={'next'}/>],

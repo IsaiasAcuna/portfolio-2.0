@@ -11,8 +11,6 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, link, techs }) => {
-
-  console.log(techs);
   
   return (
     <article className="bg-[#232323b2] backdrop-blur-2xl h-[450px] rounded-lg shadow-3xl p-6 flex flex-col justify-between w-full max-w-md">
@@ -24,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, li
         </a>
       </div>
 
-      <p className="text-[#bdbcbc] text-base">{description}</p>
+      <p className="text-[#d5d5d5] text-base">{description}</p>
 
       <Image src={`/images/${image}`} alt={title} 
         className="rounded-md h-48 object-cover"

@@ -1,16 +1,19 @@
 
 import Header from "@/components/Header";
 import HomePage from "@/components/Home";
-import DarkVeil from "@/animations/DarkVeil";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <> 
 
-        <div className="w-full mx-auto fixed inset-0 -z-10">
+        <div className="w-full opacity-20 mx-auto fixed inset-0 -z-10">
 
 
-          <DarkVeil />
+          <Image src='/images/background-2.png'
+          alt="pepe"
+            layout="fill"
+          />
 
         </div>  
 

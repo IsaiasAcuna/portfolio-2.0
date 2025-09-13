@@ -21,7 +21,7 @@ const TecnologiesSection = () => {
     <section>
       <TitleSection title="Tecnologias" icon={<FaCode size={40} />} />
 
-      <div style={{ height: '200px', position: 'relative', overflow: 'hidden'}}>
+      <div style={{ height: 'auto', position: 'relative', overflow: 'hidden'}}>
         <LogoLoop
           logos={techLogos}
           speed={120}

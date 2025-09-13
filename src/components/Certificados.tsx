@@ -38,10 +38,10 @@ const certificados = [
 
 const Certificados = () => {
   return (
-    <section id="Certificados">
+    <section id="Certificados" className='mb-40'>
       <TitleSection title='Certificados' icon={<PiCertificateBold size={40} />} />
 
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="grid grid-cols-2 justify-items-center gap-1 md:grid-cols-5 lg:justify-center md:gap-6">
         {certificados.map((cert, index) => (
           <CertificadosCard {...cert} key={index} />
         ))}
