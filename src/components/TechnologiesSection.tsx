@@ -18,10 +18,10 @@ const techLogos = [
 
 const TecnologiesSection = () => {
   return (
-    <section>
+    <section className='container my-20'>
       <TitleSection title="Tecnologias" icon={<FaCode size={40} />} />
 
-      <div style={{ height: 'auto', position: 'relative', overflow: 'hidden'}}>
+      <div className='mt-15' style={{ height: 'auto', position: 'relative', overflow: 'hidden'}}>
         <LogoLoop
           logos={techLogos}
           speed={120}

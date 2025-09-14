@@ -18,7 +18,7 @@ const certificados = [
   },
   {
     titulo: 'Desarrollo Web 3',
-    institucion: 'Aprende Programando',
+    institucion: 'Talento Tech',
     fecha: 'Julio 2024',
     imagen: 'Certificado_DW3.jpg',
   },
@@ -41,7 +41,7 @@ const Certificados = () => {
     <section id="Certificados" className='mb-40'>
       <TitleSection title='Certificados' icon={<PiCertificateBold size={40} />} />
 
-      <div className="grid grid-cols-2 justify-items-center gap-1 md:grid-cols-5 lg:justify-center md:gap-6">
+      <div className="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-5 lg:justify-center md:gap-6">
         {certificados.map((cert, index) => (
           <CertificadosCard {...cert} key={index} />
         ))}

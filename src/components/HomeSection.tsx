@@ -22,16 +22,16 @@ const HomeSection = () => {
 
                 <figure className="flex flex-col items-center">
                     <Image
-                        src="/images/isaias-acuna-face.jpg"
+                        src="/images/isaias-acuna-face-animated.png"
                         alt="Foto de Isaías"
-                        className=" rounded-[100%] object-cover"
+                        className="rounded-b-[100%] object-cover"
                         width={200}
                         height={200}
                         priority
                     />
                 </figure>
 
-                <div className="flex flex-col items-center text-center mt-[6%]">
+                <div className="flex flex-col items-center text-center mt-[6%] lg:mt-[3%]">
 
                     <SplitText
                         text="Hi! I'm Acuña Isaías"
@@ -47,13 +47,13 @@ const HomeSection = () => {
                         textAlign="center"
                         onLetterAnimationComplete={handleAnimationComplete}
                     />
-                    <h2 className="text-2xl font-semibold md:text-[40px] text-green-600 tracking-[-1.5px]">
+                    <h2 className="text-2xl font-semibold md:text-[40px] text-green-500 tracking-[-1.5px]">
                         Desarrollador Web FullStack
                     </h2>
 
                     <div className="m-[5%] flex flex-col items-center gap-y-2 md:flex-row md:justify-center md:gap-[5%]">
 
-                        <Button title='Contactame' icon={<BiMailSend />} link={'https://mail.google.com/mail/?view=cm&fs=1&to=acunaisaias504@gmail.com"'} />
+                        <Button title='Contactame' icon={<BiMailSend color="goldenrod"/>} link={'https://mail.google.com/mail/?view=cm&fs=1&to=acunaisaias504@gmail.com"'} />
                         <Button title='LinkedIn' icon={<BiLogoLinkedinSquare />} link={'https://www.linkedin.com/in/isaiasacuna/'} />
                         <Button title='GitHub' icon={<FaGithub />} link={'https://github.com/isaiasacuna'} />
                     </div>

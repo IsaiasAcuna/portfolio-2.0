@@ -6,7 +6,7 @@ import Image from 'next/image';
 const SobreMi = () => {
   return (
     <>
-      <section id="SobreMi">
+      <section id="SobreMi" className='container my-20'>
         <TitleSection title='Sobre mi' icon={<RiUserFollowLine size={40} />} />
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
@@ -23,11 +23,11 @@ const SobreMi = () => {
           </div>
 
           <Image
-            src="/images/IMG_20250314_005530_677.webp"
+            src="/images/isaias-acuna-person-animated.png"
             width={290}
             height={290}
             alt="Foto de Isaias Acuña, desarrollador web"
-            className="w-[290px] rounded-[10px] border-[10px] border-[var(--first-color-global)] rotate-[5deg]"
+            className="w-[290px] rounded-[10px] rounded-b-[40%] rotate-[5deg]"
           />
         </div>
       </section>

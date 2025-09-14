@@ -16,13 +16,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, li
     <article className="bg-[#232323b2] backdrop-blur-2xl h-[450px] rounded-lg shadow-3xl p-6 flex flex-col justify-between w-full max-w-md">
 
       <div className="flex justify-between items-center">
-        <h3 className="text-3xl font-bold text-white">{title}</h3>
+        <h3 className="text-3xl font-bold text-green-500">{title}</h3>
         <a href={link} target="_blank" rel="noopener noreferrer" className="text-xl text-slate-600 hover:text-green-600">
           <i><FaExternalLinkAlt /></i>
         </a>
       </div>
 
-      <p className="text-[#d5d5d5] text-base">{description}</p>
+      <p className="text-[#e5e5e5] text-base">{description}</p>
 
       <Image src={`/images/${image}`} alt={title} 
         className="rounded-md h-48 object-cover"

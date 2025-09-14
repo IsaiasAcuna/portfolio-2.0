@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <> 
 
-        <div className="w-full opacity-20 mx-auto fixed inset-0 -z-10">
+        <div className="w-full opacity-50 mx-auto fixed inset-0 -z-10">
 
 
           <Image src='/images/background-2.png'
