@@ -12,7 +12,7 @@ export const projects = [
   {
     title: 'Liverpool Create Team',
     description: 'Sitio Web complementado con Backend para gestionar jugadores del Liverpool FC y crear tu propio club de tus sueños.',
-    image: 'presentacion-mediasongs-card-proyectos.jpg',
+    image: 'presentacion-card-liverpoolapp.webp',
     link: 'https://liverpool-web-6eys.onrender.com/',
     techs: [<SiNextdotjs key={'next'}/>, <SiTypescript key={'next'}/>, <SiTailwindcss key={'next'}/>,<SiAxios key={'next'} />, <SiMongodb key={'next'}/>],
   },
@@ -27,7 +27,7 @@ export const projects = [
   {
     title: 'MediaSongs (Vainilla)',
     description: 'Reproductor funcional limitado de canciones. Creado desde cero con HTML, CSS y JS',
-    image: '/assets/images/presentacion-mediasongs-card-proyectos.jpg',
+    image: 'presentacion-mediasongs-card-proyectos.jpg',
     link: 'https://mediasongs.netlify.app/',
     techs: [<SiHtml5 key={'next'}/>, <SiCss3 key={'next'}/>, <SiJavascript key={'next'}/>],
   },

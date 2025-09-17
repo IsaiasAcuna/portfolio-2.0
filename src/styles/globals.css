@@ -18,6 +18,10 @@ body {
   font-family: 'Figtree', sans-serif;
 }
 
+header {
+  font-family: 'Dm sans', sans-serif;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

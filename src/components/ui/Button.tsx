@@ -9,7 +9,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ title, icon, link }) => {
   return (
-    <button className="w-auto text-[20px] border-b border-transparent md:border md:rounded-xl px-5 py-2 bg-transparent transition duration-150 hover:border-b-green-500 lg:hover:border-green-500">
+    <button className="w-auto text-[20px] border-b border-transparent lg:border lg:rounded-[30px] px-5 py-2 bg-transparent transition duration-150 hover:border-b-green-500 lg:hover:border-green-500">
             <a
               href={link}
               className="flex items-center transition duration-200"

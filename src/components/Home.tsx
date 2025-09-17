@@ -8,7 +8,7 @@ import Certificados from './Certificados'
 
 const HomePage = () => {
   return (
-    <main className='container mx-auto px-4'>
+    <main className='container mx-auto px-2'>
         <HomeSection />
 
         <ProyectsSection />
