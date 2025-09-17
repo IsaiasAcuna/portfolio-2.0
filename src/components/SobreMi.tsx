@@ -28,10 +28,10 @@ const SobreMi = () => {
 
 
                   <a href="https://github.com/IsaiasAcuna">
-                     <img src='https://github-readme-stats.vercel.app/api/top-langs/?username=isaiasacuna&show_icons=true&theme=tokyonight&hide_border=true&locale=en'></img>
+                     <img src='https://github-readme-stats.vercel.app/api/top-langs/?username=isaiasacuna&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400&locale=en'></img>
                   </a>
                   <a href="https://github.com/IsaiasAcuna">
-                     <img src='https://github-readme-stats.vercel.app/api?username=isaiasacuna&show_icons=true&theme=tokyonight&hide_border=true&locale=en'></img>
+                     <img src='https://github-readme-stats.vercel.app/api?username=isaiasacuna&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400&locale=en'></img>
                   </a>
                   </div>
 
